@@ -1,0 +1,38 @@
+{
+  "name": "ae-nodejs",
+  "description": "base project for exploring testing in javascript",
+  "version": "0.0.1",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "body-parser": "latest",
+    "express": "latest",
+    "hash-router": "latest",
+    "jquery": "latest",
+    "mustache": "latest",
+    "ramda": "latest",
+    "underscore": "latest"
+  },
+  "devDependencies": {
+    "browserify": "latest",
+    "chai": "latest",
+    "chromedriver": "^2.22.2",
+    "cucumber": "latest",
+    "mocha": "2.3.x",
+    "nodemon": "latest",
+    "selenium-webdriver": "latest",
+    "sinon": "latest",
+    "supertest": "latest",
+    "watchify": "latest",
+    "webdriverio": "latest"
+  },
+  "scripts": {
+    "features": "cucumber-js features",
+    "features-wip": "cucumber-js --tags @wip features",
+    "tests": "mocha --watch server/tests.js",
+    "server": "nodemon server/index.js"
+  }
+}
